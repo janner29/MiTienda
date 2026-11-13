@@ -12,6 +12,9 @@ public class Categoria
     [StringLength(100)]
     public string Nombre { get; set; } = string.Empty;
 
+    [StringLength(250)]
+    public string? Descripcion { get; set; }
+
     [JsonIgnore]
     public List<Producto> Productos { get; set; } = new();
 }

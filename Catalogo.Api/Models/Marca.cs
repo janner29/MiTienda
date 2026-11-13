@@ -12,6 +12,9 @@ public class Marca
     [StringLength(100)]
     public string Nombre { get; set; } = string.Empty;
 
+    [StringLength(100)]
+    public string? PaisOrigen { get; set; }
+
     [JsonIgnore]
     public List<Producto> Productos { get; set; } = new();
 }

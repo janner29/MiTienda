@@ -7,7 +7,7 @@ namespace Inventario.Api.Models;
 public class ReservaStock
 {
     [Key]
-    public int IdReservaStock { get; set; }
+    public int IdReserva { get; set; }
 
     public int IdBodega { get; set; }
     [ForeignKey(nameof(IdBodega))]

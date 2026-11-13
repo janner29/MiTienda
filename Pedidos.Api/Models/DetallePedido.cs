@@ -8,7 +8,7 @@ namespace Pedidos.Api.Models;
 public class DetallePedido
 {
     [Key]
-    public int IdDetallePedido { get; set; }
+    public int IdDetalle { get; set; }
 
     public int IdPedido { get; set; }
     [JsonIgnore]

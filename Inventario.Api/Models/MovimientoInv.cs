@@ -7,7 +7,7 @@ namespace Inventario.Api.Models;
 public class MovimientoInv
 {
     [Key]
-    public int IdMovimientoInv { get; set; }
+    public int IdMovimiento { get; set; }
 
     public int IdBodega { get; set; }
     [ForeignKey(nameof(IdBodega))]
@@ -17,7 +17,7 @@ public class MovimientoInv
 
     [Required]
     [StringLength(10)]
-    public string TipoMovimiento { get; set; } = string.Empty;   // Entrada | Salida
+    public string Tipo { get; set; } = string.Empty;   // Entrada | Salida
 
     public int Cantidad { get; set; }
 

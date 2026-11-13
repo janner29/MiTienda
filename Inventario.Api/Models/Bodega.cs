@@ -15,8 +15,12 @@ public class Bodega
     public string Nombre { get; set; } = string.Empty;
 
     [Required]
+    [StringLength(100)]
+    public string Ciudad { get; set; } = string.Empty;
+
+    [Required]
     [StringLength(150)]
-    public string Ubicacion { get; set; } = string.Empty;
+    public string Direccion { get; set; } = string.Empty;
 
     [JsonIgnore]
     public List<Existencia> Existencias { get; set; } = new();

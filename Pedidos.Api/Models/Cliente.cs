@@ -15,15 +15,12 @@ public class Cliente
     public string Cedula { get; set; } = string.Empty;
 
     [Required]
-    [StringLength(100)]
-    public string Nombre { get; set; } = string.Empty;
-
-    [Required]
-    [StringLength(100)]
-    public string Apellido { get; set; } = string.Empty;
-
     [StringLength(150)]
-    public string? Email { get; set; }
+    public string Nombres { get; set; } = string.Empty;
+
+    [EmailAddress]
+    [StringLength(150)]
+    public string? Correo { get; set; }
 
     [JsonIgnore]
     public List<Pedido> Pedidos { get; set; } = new();

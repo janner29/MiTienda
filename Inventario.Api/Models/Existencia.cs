@@ -15,7 +15,7 @@ public class Existencia
 
     public int IdProducto { get; set; }
 
-    public int Cantidad { get; set; }
+    public int Stock { get; set; }
 
     public int StockMinimo { get; set; }
 }
